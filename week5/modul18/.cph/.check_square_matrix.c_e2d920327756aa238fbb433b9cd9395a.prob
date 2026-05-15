@@ -1,0 +1,1 @@
+{"name":"Local: check_square_matrix","url":"d:\\Phitron_Batch_9\\week5\\modul18\\check_square_matrix.c","tests":[{"id":1778856682514,"input":"3 3\n1 2 3\n4 5 6\n7 8 9","output":"tis is a square matrix"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron_Batch_9\\week5\\modul18\\check_square_matrix.c","group":"local","local":true}
