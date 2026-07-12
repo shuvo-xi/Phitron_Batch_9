@@ -34,18 +34,12 @@ void print_link_list(Node *head)
         tem = tem->next;
     }
 }
-void delete_at_any_position(Node*head,int idx)
-{
-    Node*tem=head;
-    for(int i=1;i<idx;i++)
-    {
-        tem=tem->next;
-    }
-    Node*deleteNode=tem->next;
-    tem=tem->next->next;
-    delete deleteNode;
-
-}
+ void delete_link_list(Node*&head)
+ { 
+    Node*deletehead=head;
+    head=head->next;
+    delete deletehead;
+ }
 int main()
 {
 
@@ -61,9 +55,16 @@ int main()
         }
          insert_at_tail(head, tail, val);
     }
-    delete_at_any_position(head,2);
+    delete_link_list(head);
     print_link_list(head);
-   
+    // Node *head = new Node(10);
+    // Node *a = new Node(20);
+    // Node *tail = new Node(30);
+
+    // head->next = a;
+    // a->next = tail;
+    // insert_at_tail(head, tail, 100);
+    // print_link_list(head);
     return 0;
 }
 
