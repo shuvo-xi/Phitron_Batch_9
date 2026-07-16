@@ -34,6 +34,20 @@ void print_link_list(Node *head)
         tem = tem->next;
     }
 }
+   void sort_link_list(Node*head)
+   {
+    for(Node*i=head;i->next!=NULL;i=i->next)
+    {
+        
+    for(Node*j=i->next;j!=NULL;j=j->next)
+    {
+        if(i->val>j->val)
+        {
+            swap(i->val,j->val);
+        }
+    }
+    }
+   }
 
 int main()
 {
@@ -50,6 +64,7 @@ int main()
         }
         insert_at_tail(head, tail, val);
     }
+    sort_link_list(head);
 
     print_link_list(head);
 
